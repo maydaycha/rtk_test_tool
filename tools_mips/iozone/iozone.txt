@@ -1,0 +1,4 @@
+./iozone -aR -I -y 2K -q 512K -g 64M -+u -b ./usb20_HD_directIO_utmi60M.xls 
+./iozone -aR -I -y 256K -q 512K -n 256M -g 512M -+u -b ./Mars1283_host_to_HDD_port2.xls
+./iozone -aR -I -y 256K -q 512K -n 256M -g 512M -+u -b /mnt/hdc/tools_mips/iozone/1881_host_to_HDD_port1.xls
+

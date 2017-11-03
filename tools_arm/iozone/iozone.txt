@@ -1,0 +1,7 @@
+cp /mnt/media_rw/udisk/sda/iozone /data
+chmod +x /data/iozone
+mount -o remount rw /mnt/media_rw/udisk/sda
+cd /mnt/media_rw/udisk/sda
+/data/iozone_arm -I -o -i0 -i1 -y 256K -q 512K -n 256M -g 512M -+u -Rab ./sirius_usb2_pny_4GB_U3.xls
+cd /
+umount /mnt/media_rw/udisk/sda

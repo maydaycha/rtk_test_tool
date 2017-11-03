@@ -1,0 +1,106 @@
+gnu_getopt.o: gnu_getopt.c \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/stdio.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/features.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/uClibc_config.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/sys/cdefs.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/lib/gcc/arm-linux-uclibcgnueabi/4.9.3/include/stddef.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/types.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/wordsize.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/typesizes.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/uClibc_stdio.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/wchar.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/wchar.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/pthreadtypes.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/endian.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/endian.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/byteswap.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/byteswap.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/byteswap-common.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/lib/gcc/arm-linux-uclibcgnueabi/4.9.3/include/stdarg.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/stdio_lim.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/stdlib.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/sys/types.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/time.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/sys/select.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/select.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/sigset.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/time.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/sys/sysmacros.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/alloca.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/unistd.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/posix_opt.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/uClibc_posix_opt.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/confname.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/getopt.h \
+ /home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/string.h \
+ ../include/gnu_getopt.h
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/stdio.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/features.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/uClibc_config.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/sys/cdefs.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/lib/gcc/arm-linux-uclibcgnueabi/4.9.3/include/stddef.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/types.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/wordsize.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/typesizes.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/uClibc_stdio.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/wchar.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/wchar.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/pthreadtypes.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/endian.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/endian.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/byteswap.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/byteswap.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/byteswap-common.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/lib/gcc/arm-linux-uclibcgnueabi/4.9.3/include/stdarg.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/stdio_lim.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/stdlib.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/sys/types.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/time.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/sys/select.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/select.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/sigset.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/time.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/sys/sysmacros.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/alloca.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/unistd.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/posix_opt.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/uClibc_posix_opt.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/confname.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/bits/getopt.h:
+
+/home2/jason.chiu/Projects/Mac4/kernel/system/tmp/toolchain/asdk-4.9.3-a53-EL-3.10-u0.9.33-a32nt-150818/include/string.h:
+
+../include/gnu_getopt.h:
