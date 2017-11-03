@@ -1,7 +1,7 @@
 PATH1="/storage/sda1"
 PATH2="/storage/sdb1"
 FILE_NAME="test_file"
-LOG_FILE="/tmp/usb_test.log"
+LOG_FILE="/tmp/usb_cp_test.log"
 
 rm $LOG_FILE;
 
