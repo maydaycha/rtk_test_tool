@@ -10,6 +10,7 @@ echo "Generate 512MiB file...." >> $LOG_FILE;
 dd if=/dev/zero of=$PATH1/$FILE_NAME bs=64k count=8k;
 rc=$?
 if [[ $rc != 0 ]]; then
+    echo "test fail";
     echo "test fail" >> $LOG_FILE;
     exit;
 fi
@@ -22,12 +23,13 @@ r=$((r + 1))
 while [ 1 == 1 ]
 do
     round=$((round + 1));
+    echo "------------ Round " $round "--------------";
     echo "------------ Round " $round "--------------" >> $LOG_FILE
     dd if=$PATH1/$FILE_NAME of=$PATH2/$FILE_NAME bs=64k;
     rc=$?
     if [[ $rc != 0 ]]; then
-        echo "test fail" >> $LOG_FILE;
         echo "tes fail exit!";
+        echo "test fail" >> $LOG_FILE;
         exit;
     fi
     echo "copy from " $PATH1 " to " $PATH2 "ok ! ";
@@ -41,8 +43,8 @@ do
     dd if=$PATH2/$FILE_NAME of=$PATH1/$FILE_NAME bs=64k;
     rc=$?
     if [[ $rc != 0 ]]; then
-        echo "test fail" >> $LOG_FILE;
         echo "tes fail exit!";
+        echo "test fail" >> $LOG_FILE;
         exit;
     fi
     echo "copy from " $PATH2 " to " $PATH1 "ok ! ";
