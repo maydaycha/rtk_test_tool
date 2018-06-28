@@ -1,6 +1,6 @@
 #check args
 if [ "$1" == "" ] || [ "$2" == "" ] || [ "$3" == "" ]; then
-	echo "Usage: usb_test_md2.sh [copy_from_file] [copy_to_file] [times] [result_file]"
+	echo "Usage: usb_test_md5.sh [copy_from_file] [copy_to_file] [times] [result_file]"
 	echo "File path please use absolute path"
 	exit
 fi
@@ -30,7 +30,7 @@ main() {
 	success=0
 	fail=0
 	i=0
-	while [ "$i" != "$testing_times" ]
+	while [ "$i" != "$testing_times" ] || [ $testing_times -eq 0 ]
 	do
 		echo "Round: "$i
 		rm -f $copy_to_file $md5_copy_to_file
@@ -41,9 +41,15 @@ main() {
 		#cp $copy_from_file $copy_to_file || $(echo "cp" $copy_from_file $copy_to_file "fail. exit..."; exit;)
 		cp $copy_from_file $copy_to_file
 
+		# flush file system buffer and clear PageCache
+		sync; echo 1 > /proc/sys/vm/drop_caches
+
 		# do md5 checksum for copy_to_file
 		#md5sum $copy_to_file | awk 'BEGIN {FS=" "}; {print $1}' > $md5_copy_to_file || $(echo "md5sum" $copy_to_file "fail..."; exit;)
 		md5sum $copy_to_file | awk 'BEGIN {FS=" "}; {print $1}' > $md5_copy_to_file
+
+		# flush file system buffer and clear PageCache
+		sync; echo 1 > /proc/sys/vm/drop_caches
 
 		DIFF=$(diff $md5_copy_from_file $md5_copy_to_file)
 
