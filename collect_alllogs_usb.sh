@@ -1,5 +1,4 @@
 #!/bin/sh
-# Copyright (c) 2016-2017  LG Electronics, Inc.
 if [ $# -eq 0 ] ; then
 echo ERR: You must specify a filename!
 exit 5
