@@ -55,7 +55,7 @@ copy_file_and_check() {
     md5_copy_to_file="$copy_to_file".md5
 
     # Cleanup md5_source file, md5_destination file and destination file
-    rm $md5_copy_from_file $copy_to_file $md5_copy_to_file
+    rm $md5_copy_from_file $copy_to_file $md5_copy_to_file > /dev/null 2>&1
 
     # make md5 for soruce file
     md5sum $copy_from_file | ($awk_cmd 'BEGIN {FS=" "}; {print $1}') > $md5_copy_from_file
@@ -90,9 +90,10 @@ main() {
     mnt_point1=$path1
     mnt_point2=$path2
 
+    result_file=$(date "+%F-%T").log
 
     # clean usb_md5_test_file
-    rm "$mnt_point1/usb_md5_test_file" "$mnt_point2/usb_md5_test_file"
+    rm "$mnt_point1/usb_md5_test_file" "$mnt_point2/usb_md5_test_file" > /dev/null 2>&1
 
     ## use dd to generate file to mnt_point1
     echo "Generate " $(((16*1024*$count))) " size file"
@@ -123,9 +124,11 @@ main() {
         if [ "$retval" == "0" ]; then
             echo "pass"
             success=$(($success+1))
+            echo "Round $i: pass" >> $result_file
         else
             echo "fail"
             fail=$(($fail+1))
+            echo "Round $i: fail" >> $result_file
         fi
 
         i=$(($i+1))
@@ -137,11 +140,9 @@ main() {
     # vid_2=$(cat /sys/bus/usb/devices/2-2/idVendor)
     # pid_2=$(cat /sys/bus/usb/devices/2-2/idProduct)
 
-    # result_file=$vid_1"_"$pid_1"-"$vid_2"_"$pid_2"-result.txt"
-    result_file=$(date).log
 
     # Sumeraize the test result. Both output to file and console
-    echo "Total Times: "$TIMES "  Pass: "$success "  Fail: "$fail "  Pass rate:" $success"/"$TIMES | tee $result_file
+    echo "Total Times: "$TIMES "  Pass: "$success "  Fail: "$fail "  Pass rate:" $success"/"$TIMES | tee -a $result_file
 
     echo "Finish. result save to " $result_file
 }
